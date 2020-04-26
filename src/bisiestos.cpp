@@ -12,7 +12,7 @@ bool Bisiestos::es_bisiesto(int anio) {
     // Chequeo la PRE
     assert(anio > 0);
 
-    return (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0;
+    return (anio % 4 == 0 && anio % 100 != 0) /* || anio % 400 == 0 */;
 }
 
 list<int> Bisiestos::bisiestos_entre(int desde, int hasta) {
