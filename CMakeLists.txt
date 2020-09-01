@@ -7,6 +7,7 @@ project(bisestos)
 set(CMAKE_CXX_STANDARD 11)
 
 # Algunos flags para pasar al compilador (gnu++11 en vez de c++11 para que sea cross-plat)
+# pongo el -pthread porque me lo pide google test.
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -std=gnu++11 -ggdb3 -g -Wall")
 
 # Leemos todos los archivos fuentes en ./src
